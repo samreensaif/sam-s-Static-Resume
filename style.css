@@ -32,7 +32,29 @@ body {
     font-family: "SUSE", system-ui;   
 }
 
+#cv-image-container {
+    border: 2px solid #0044cc;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    /* Use float instead of absolute positioning */
+    margin-top: 55px;
+    margin-right: 50px;
+    border-radius: 3px;
+    
+}
 
+#cv-image {
+    width: 100%;
+    height: auto;
+    /* Ensure correct scaling */
+    object-fit: contain;
+    background: linear-gradient(#4e86c5, #2760a1);
+}
 
 #cv-main {
     width: 80%;
@@ -100,4 +122,18 @@ p {
 .footer p {
     
     font-size: medium;
+}
+
+#toggle-btn{
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: large;
+    &:hover{
+        background-color: #2760a1;
+    }
 }
