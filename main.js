@@ -1,14 +1,12 @@
 "use strict";
-let toggle = document.getElementById('toggle-btn');
-let currentIndex = -1;
-toggle.addEventListener('click', function () {
+const toggleBtn = document.getElementById('toggle-btn');
+let currentIndex = 0; // Start with the "Objective" section
+toggleBtn.addEventListener('click', () => {
     const sections = document.querySelectorAll('main > section');
-    // Remove highlight from the current section
-    if (currentIndex >= 0) {
-        sections[currentIndex].style.backgroundColor = '';
-    }
-    // Update the index to the next section
+    // Reset the background color of the previous section
+    sections.forEach(section => section.style.backgroundColor = '');
+    // Highlight the current section
+    sections[currentIndex].style.backgroundColor = 'rgba(217, 255, 0, 0.3)';
+    // Move to the next section (loop back if at the end)
     currentIndex = (currentIndex + 1) % sections.length;
-    // Highlight the new section
-    sections[currentIndex].style.backgroundColor = 'lightblue';
 });
