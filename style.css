@@ -26,7 +26,7 @@ body {
 }
 
 .header h1 {
-    font-size: 2rem;
+    font-size: 4rem;
     font-family: "SUSE", system-ui;
     font-weight: bold;
 }
@@ -58,7 +58,9 @@ body {
     padding: 1.5rem;
     border: 2px solid #0044cc;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;;
+    margin-bottom: 10px;
 }
 
 #cv-image-container {
@@ -125,7 +127,7 @@ p, ul {
     text-decoration: underline;
 }
 
-#toggle-btn {
+#toggle-btn, button {
     background-color: #0044cc;
     color: white;
     border: none;

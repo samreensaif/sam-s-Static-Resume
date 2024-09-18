@@ -10,3 +10,53 @@ toggleBtn.addEventListener('click', () => {
     // Move to the next section (loop back if at the end)
     currentIndex = (currentIndex + 1) % sections.length;
 });
+let objBtn = document.getElementById('objBtn');
+let workBtn = document.getElementById('workBtn');
+let eduBtn = document.getElementById('eduBtn');
+let achBtn = document.getElementById('achBtn');
+let skillBtn = document.getElementById('skillBtn');
+let objSec = document.getElementById('objective');
+let workSec = document.getElementById('work-experience');
+let eduSec = document.getElementById('education');
+let achSec = document.getElementById('achievements');
+let skillSec = document.getElementById('skills');
+objBtn.addEventListener('click', () => {
+    if (objSec.style.display == 'block') {
+        objSec.style.display = 'none';
+    }
+    else {
+        objSec.style.display = 'block';
+    }
+});
+workBtn.addEventListener('click', () => {
+    if (workSec.style.display == 'block') {
+        workSec.style.display = 'none';
+    }
+    else {
+        workSec.style.display = 'block';
+    }
+});
+eduBtn.addEventListener('click', () => {
+    if (eduSec.style.display == 'block') {
+        eduSec.style.display = 'none';
+    }
+    else {
+        eduSec.style.display = 'block';
+    }
+});
+achBtn.addEventListener('click', () => {
+    if (achSec.style.display == 'block') {
+        achSec.style.display = 'none';
+    }
+    else {
+        achSec.style.display = 'block';
+    }
+});
+skillBtn.addEventListener('click', () => {
+    if (skillSec.style.display == 'block') {
+        skillSec.style.display = 'none';
+    }
+    else {
+        skillSec.style.display = 'block';
+    }
+});
