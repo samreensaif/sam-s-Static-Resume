@@ -19,6 +19,7 @@ let workBtn:any = document.getElementById('workBtn');
 let eduBtn:any = document.getElementById('eduBtn');
 let achBtn:any = document.getElementById('achBtn');
 let skillBtn:any = document.getElementById('skillBtn');
+let downloadBtn:any = document.getElementById('downloadBtn');
 
 
 let objSec:any = document.getElementById('objective');
@@ -26,6 +27,7 @@ let workSec:any = document.getElementById('work-experience');
 let eduSec:any = document.getElementById('education');
 let achSec:any = document.getElementById('achievements');
 let skillSec:any = document.getElementById('skills');
+
 
 objBtn.addEventListener('click', () => {
     
@@ -69,4 +71,9 @@ skillBtn.addEventListener('click', () => {
     else{
         skillSec.style.display = 'block';
     }
+})
+
+downloadBtn.addEventListener('click',() =>{
+    window.print();
+
 })

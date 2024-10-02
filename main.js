@@ -15,6 +15,7 @@ let workBtn = document.getElementById('workBtn');
 let eduBtn = document.getElementById('eduBtn');
 let achBtn = document.getElementById('achBtn');
 let skillBtn = document.getElementById('skillBtn');
+let downloadBtn = document.getElementById('downloadBtn');
 let objSec = document.getElementById('objective');
 let workSec = document.getElementById('work-experience');
 let eduSec = document.getElementById('education');
@@ -59,4 +60,7 @@ skillBtn.addEventListener('click', () => {
     else {
         skillSec.style.display = 'block';
     }
+});
+downloadBtn.addEventListener('click', () => {
+    window.print();
 });
