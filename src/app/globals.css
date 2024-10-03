@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sofadi+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+#heading,#left h2,h1 {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+@media (max-width: 768px) {
+  #left h2 {
+    font-size: 1.5rem;
+  }
+}
+
+#image-container{
+  display: grid;
+  gap:8px;
+  flex-basis: 50%;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: 120px;
+  
+}
+@media (max-width:768px) {
+ 
+#image-container{
+  
+  display:flex;
+  flex-direction: column;
+  gap:16px;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 60%;
+ margin: 0 auto;
+  
+}}
+
+.box{
+  
+  border-radius: 10px;
+  background-size: cover; 
+  background-position:top; 
+  background-repeat: no-repeat;
+  background-color: #222;
+  cursor:pointer;
+  background-blend-mode:hard-light;
+  transition: all 1s ease-in-out;
+  height:120px;
+  width:100%;
+} 
+.box:hover{
+  background-color: #999;
+  background-position: bottom;
+  box-shadow: 0 0 4px #fff;
+
+}
+
+.row-2 {
+  grid-row: span 2;
+  height: 240px; /* Ensuring it's double the height */
+  background-size: 100% 150%; /* Make the image larger to allow visible movement */
+  background-position: top; /* Start from the top */
+}
+@media (max-width:768px){
+  .row-2 {
+    height: 120px;
+   background-size: cover;
+   background-position: top;
+   
+  }
+}
+
+.row-2:hover {
+  background-position: bottom; /* Move background to the bottom */
+}
+
+.col-2{
+  grid-column: span 2;
+}
+
+
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+/* Custom CSS for slider dots */
+.slick-dots {
+  bottom: -100px; /* Adjust vertical positioning */
+  display: flex !important; /* Use flex to prevent overlap */
+  justify-content: center; /* Center the dots */
+  gap: 8px; /* Space between dots */
+}
+
+.slick-dots li {
+  margin: 0; /* Remove margin */
+  
+}
+
+.slick-dots li button {
+  width: 12px; /* Set width */
+  height: 12px; /* Set height */
+  border-radius: 50%; /* Make buttons circular */
+  background: gray; /* Background color for inactive dots */
+}
+
+.slick-dots li.slick-active button {
+  background: #991b1b; /* Color for active dot */
+}
+
+/* Ensure the container has enough height */
+.slider-container {
+  position: relative; /* To position the dots correctly */
+  padding-bottom: 60px; /* Add bottom padding for dots */
+}
