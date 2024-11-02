@@ -93,7 +93,7 @@ body {
 }
 
 h2 {
-    border-bottom: 2px solid #0044cc;
+    border-bottom: 2px solid #006d77;
     padding-bottom: 5px;
     margin-bottom: 20px;
     margin-top: 30px;
@@ -128,8 +128,8 @@ p, ul {
 }
 
 #toggle-btn, button {
-    background-color: #a9def9;
-    color: #006d77;
+    background-color: #006d77;
+    color: #a9def9;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -139,7 +139,7 @@ p, ul {
 }
 
 #toggle-btn:hover {
-    background-color: #006d77;
+    background-color: #83c5be;
     color:#a9def9;
 }
 
