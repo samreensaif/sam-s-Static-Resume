@@ -140,7 +140,7 @@ p, ul {
 
 #toggle-btn:hover,button:hover {
     background-color: #33939b;
-    color:#a9def9;
+    color:#006d77;
 }
 
 @media (max-width: 768px) {
