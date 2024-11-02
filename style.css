@@ -32,7 +32,7 @@ body {
 }
 #cv-title {
     font-size: 1.2rem;
-    color: #006d77;
+    color: black;
     margin-bottom: 30px; /* Adjusted to reduce gap */
     margin-top: -10px;
     
@@ -138,8 +138,8 @@ p, ul {
     margin-top: 10px;
 }
 
-#toggle-btn:hover {
-    background-color: #83c5be;
+#toggle-btn:hover,button:hover {
+    background-color: #33939b;
     color:#a9def9;
 }
 
