@@ -74,13 +74,12 @@ body {
     right:150px;   
     border-radius: 3px;
     position:absolute;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#cv-image {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
 
 #cv-name {
     font-size: 3rem;
